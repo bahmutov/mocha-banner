@@ -10,6 +10,7 @@
       "pre-commit": [
         "npm prune",
         "npm run deps",
+        "npm run build",
         "npm test",
         "git add src/*.js",
         "npm run ban"
@@ -61,9 +62,9 @@
     "secure": "nsp check",
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
     "test": "npm run unit",
-    "unit": "mocha src/*-spec.js",
+    "unit": "mocha src/spec*.js",
     "unused-deps": "dependency-check --unused --no-dev .",
-    "build": "tsc --noEmit",
+    "build": "tsc",
     "semantic-release": "semantic-action pre && npm publish && semantic-action post"
   },
   "release": {

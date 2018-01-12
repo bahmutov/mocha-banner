@@ -1,3 +1,3 @@
 declare module 'its-name' {
-  export function itsName(): string
+  export default function itsName(test): [string]
 }
