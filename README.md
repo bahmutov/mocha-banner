@@ -19,6 +19,7 @@ npm install --save-dev mocha-banner
 ## Use
 
 ```js
+// include somewhere at the beginning
 require('mocha-banner').register()
 ```
 
@@ -29,6 +30,19 @@ Before each test you will get a nice banner
          my-app / first test
 ----------------------------------------
     ✓ first test
+```
+
+You can also enable banner only in some suites. Instead of putting `register()` *outside* of any any spec, place it inside
+
+```js
+describe('will have banner', () => {
+  require('mocha-banner').register()
+  it('has banner', () => {})
+  it('has banner', () => {})
+})
+describe('no banner', () => {
+  it('will not have banner', () => {})
+})
 ```
 
 ### Small print
