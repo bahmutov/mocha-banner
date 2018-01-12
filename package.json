@@ -63,7 +63,7 @@
     "test": "npm run unit",
     "unit": "mocha src/*-spec.js",
     "unused-deps": "dependency-check --unused --no-dev .",
-    "build": "tsc",
+    "build": "tsc --noEmit",
     "semantic-release": "semantic-action pre && npm publish && semantic-action post"
   },
   "release": {

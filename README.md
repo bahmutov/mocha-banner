@@ -13,10 +13,23 @@
 Requires [Node](https://nodejs.org/en/) version 6 or above.
 
 ```sh
-npm install --save mocha-banner
+npm install --save-dev mocha-banner
 ```
 
 ## Use
+
+```js
+require('mocha-banner').register()
+```
+
+Before each test you will get a nice banner
+
+```
+----------------------------------------
+         my-app / first test
+----------------------------------------
+    ✓ first test
+```
 
 ### Small print
 
