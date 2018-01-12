@@ -29,8 +29,8 @@
     "node": ">=6"
   },
   "files": [
-    "src/*.js",
-    "!src/*-spec.js"
+    "dist",
+    "src/*.ts"
   ],
   "homepage": "https://github.com/bahmutov/mocha-banner#readme",
   "keywords": [
@@ -39,7 +39,8 @@
     "test"
   ],
   "license": "MIT",
-  "main": "src/",
+  "main": "dist",
+  "module": "src",
   "private": false,
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
@@ -61,12 +62,15 @@
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
     "test": "npm run unit",
     "unit": "mocha src/*-spec.js",
-    "unused-deps": "dependency-check --unused --no-dev ."
+    "unused-deps": "dependency-check --unused --no-dev .",
+    "build": "tsc"
   },
   "release": {
     "analyzeCommits": "simple-commit-message"
   },
   "devDependencies": {
+    "@types/mocha": "2.2.46",
+    "@types/node": "9.3.0",
     "ban-sensitive-files": "1.9.2",
     "dependency-check": "2.10.0",
     "deps-ok": "1.2.1",
@@ -77,5 +81,8 @@
     "pre-git": "3.17.0",
     "prettier-standard": "8.0.0",
     "standard": "10.0.3"
+  },
+  "dependencies": {
+    "its-name": "1.0.0"
   }
 }

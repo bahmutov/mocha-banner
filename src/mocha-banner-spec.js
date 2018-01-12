@@ -1,8 +1,9 @@
 'use strict'
 
-
 /* eslint-env mocha */
-const mochaBanner = require('.')
+const mochaBanner = require('..')
+
+mochaBanner.register()
 
 describe('mocha-banner', () => {
   it('write this test', () => {
