@@ -45,6 +45,8 @@ describe('no banner', () => {
 })
 ```
 
+Uses [terminal-banner](https://github.com/bahmutov/terminal-banner) under the hood.
+
 ### Small print
 
 Author: Gleb Bahmutov &lt;gleb.bahmutov@gmail.com&gt; &copy; 2018

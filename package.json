@@ -89,6 +89,7 @@
     "standard": "10.0.3"
   },
   "dependencies": {
-    "its-name": "1.0.0"
+    "its-name": "1.0.0",
+    "terminal-banner": "1.0.0"
   }
 }
