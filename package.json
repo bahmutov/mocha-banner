@@ -90,6 +90,6 @@
   },
   "dependencies": {
     "its-name": "1.0.0",
-    "terminal-banner": "1.0.0"
+    "terminal-banner": "1.1.0"
   }
 }
