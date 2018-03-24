@@ -84,7 +84,7 @@
     "nsp": "3.2.1",
     "pre-git": "3.17.0",
     "prettier-standard": "8.0.0",
-    "semantic-action": "1.1.0",
+    "semantic-action": "1.1.6",
     "simple-commit-message": "3.3.2",
     "standard": "10.0.3"
   },
